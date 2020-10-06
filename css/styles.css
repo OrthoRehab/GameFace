@@ -8,3 +8,11 @@ body {
     left: 50%;
     transform: translateX(-50%);
 }
+
+.jumbotron {
+    background-image: url(img/footballsunset2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
