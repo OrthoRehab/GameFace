@@ -9,47 +9,115 @@
         <link rel="stylesheet" href="css/bootstrap-grid.min.css">
         <link rel="stylesheet" href="css/styles.css">
 
-        <title>|Game Face Sports|</title>
+        <title>|GameFace Sports|</title>
+
+        <script>
+            $(window).scroll(function(){
+                var scroll = $(window).scrollTop();
+                if(scroll < 300){
+                    $('.fixed-top').css('background', 'transparent');
+                } else{
+                    $('.fixed-top').css('background', 'rgba(23, 162, 184, 0.9)');
+                }
+            });
+        </script>
 
     </head>
     <body>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #0544A4;"><!-- navbar -->
-            <a class="navbar-brand" href="index.html">GameFace</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <header>
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark"><!-- navbar -->
+                <a class="navbar-brand" href="index.html"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav navbar-center mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="#">About Us</a>
-                          <a class="dropdown-item" href="#">Corona Virus Update</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="cfalls.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Columbia Falls</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="#">Advertising</a>
-                          <a class="dropdown-item" href="#">Community Partners</a>
-                          <a class="dropdown-item" href="#">Sign Up!</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="bigfork.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bigfork</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="#">Advertising</a>
-                          <a class="dropdown-item" href="#">Community Partners</a>
-                          <a class="dropdown-item" href="#">Sign Up!</a>
-                        </div>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav navbar-center mr-auto nav-custom">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">About Us</a>
+                            <a class="dropdown-item" href="#">Corona Virus Update</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="cfalls.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Columbia Falls</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Advertising</a>
+                                <a class="dropdown-item" href="#">Community Partners</a>
+                                <a class="dropdown-item" href="#">Sign Up!</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="bigfork.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bigfork</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Advertising</a>
+                                <a class="dropdown-item" href="#">Community Partners</a>
+                                <a class="dropdown-item" href="#">Sign Up!</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav><!-- end of navbar -->
+            <div class="container-fluid main-image">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8 white-text text-center text-md-left mt-xl-5 mb-5 wow fadeInLeft" data-wow-delay="0.3s">
+                        <h1 class="h1-responsive font-weight-bold mt-sm-5" style="text-align: right;">Welcome to GameFace Sports!</h1>
+                        <hr class="hr-light">
+                        <h2>Supporting our home-town athletes with community partners like you.</h2>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
             </div>
-        </nav><!-- end on navbar -->
+        </header>
+        <main class="main">
+            <hr class="hr">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="card card-custom text-center border-0">
+                        <img class="card-img-top card-img-custom img-fluid" id="card-img-GF" src="img/gamefaceFavicon.jpg" alt="Game Face logo">
+                        <div class="card-body">
+                            <p class="card-text">Learn more about GameFace and our goals</p>
+                            <a href="about.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="card card-custom text-center border-0">
+                        <img class="card-img-top card-img-custom img-fluid rounded-circle" id="card-img-contact" src="img/contactUs.jpg" alt="Game Face logo">
+                        <div class="card-body">
+                            <p class="card-text">Have questions? Click here to get in touch with us</p>
+                            <a href="about.html" class="btn btn-primary">Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="card card-custom text-center border-0">
+                        <img class="card-img-top card-img-custom" id="card-img-cfalls" src="img/cfallsLogo.png" alt="Game Face logo">
+                        <div class="card-body">
+                            <p class="card-text">View our advertising options and prices for Columbia Falls</p>
+                            <a href="about.html" class="btn btn-primary">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="card card-custom text-center border-0">
+                        <img class="card-img-top card-img-custom" id="card-img-bigfork" src="img/bigforkLogo.jpg" alt="Game Face logo">
+                        <div class="card-body">
+                            <p class="card-text">View our advertising options and prices for Bigfork</p>
+                            <a href="about.html" class="btn btn-primary">View</a>
+                        </div>
+                    </div>
+                    <div class="card card-custom text-center border-0">
+                        <img class="card-img-top card-img-custom rounded-circle" id="card-img-join" src="img/joinUs.jpg" alt="Game Face logo">
+                        <div class="card-body">
+                            <p class="card-text">Click here to fill out an advertisement form</p>
+                            <a href="about.html" class="btn btn-primary">Join Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
 
     
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
