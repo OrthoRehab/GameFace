@@ -16,3 +16,17 @@ body {
     background-position: center center;
     background-size: cover;
 }
+
+.main {
+    margin-bottom: -100px;
+}
+
+.intro-text {
+    font-size: 16px;
+    box-shadow: #424f95 2px;
+}
+
+.card-custom {
+  margin: 15px;
+  width: 15rem;
+}
