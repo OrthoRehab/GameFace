@@ -1,6 +1,7 @@
 /*not an empty file*/
 body {
-    color: red;
+    color: whitesmoke;
+    background-color: royalblue;
 }
 
 .navbar-nav.navbar-center {
@@ -10,7 +11,8 @@ body {
 }
 
 .main-image {
-    background-image: url('img/footballsunset2.jpg');
+    background: url("../img/footballsunset2.jpg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
+    background-size: cover;
 }
