@@ -1,7 +1,7 @@
 /*not an empty file*/
 body {
-    color: whitesmoke;
-    background-color: royalblue;
+    font-size: 16pt;
+    font-family: 'Roboto', 'Open Sans', 'Roboto Slab', 'Serif' !important;
 }
 
 .navbar-nav.navbar-center {
@@ -28,5 +28,5 @@ body {
 
 .card-custom {
   margin: 15px;
-  width: 15rem;
+  width: 350px;
 }
