@@ -1,6 +1,7 @@
 /*not an empty file*/
 body {
-    color: red;
+    font-size: 16pt;
+    font-family: 'Roboto', 'Open Sans', 'Roboto Slab', 'Serif' !important;
 }
 
 .navbar-nav.navbar-center {
@@ -9,3 +10,52 @@ body {
     transform: translateX(-50%);
 }
 
+.main-image {
+    background: url("../img/footballsunset2.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.main {
+    margin-bottom: -100px;
+}
+
+.intro-text {
+    font-size: 16px;
+    box-shadow: #424f95 2px;
+}
+
+.card-custom {
+  margin: 15px;
+  width: 350px;
+}
+
+.nav-custom {
+    padding-top: 1rem;
+}
+
+.card-img-custom {
+    height: 6vw;
+    align-self: center;
+}
+
+#card-img-bigfork {
+    width: 8vw;
+}
+
+#card-img-cfalls {
+    width: 8vw;
+}
+
+#card-img-GF {
+    width: 10vw;
+}
+
+#card-img-contact {
+    width: 10vw;
+}
+
+#card-img-join {
+    width: 10vw;
+}
