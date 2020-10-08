@@ -9,3 +9,8 @@ body {
     transform: translateX(-50%);
 }
 
+.main-image {
+    background-image: url('img/footballsunset2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
