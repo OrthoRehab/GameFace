@@ -40,6 +40,11 @@ body {
     align-self: center;
 }
 
+.custom-footer {
+    background-color: rgb(22, 22, 22);
+    text-align: center;
+}
+
 #card-img-bigfork {
     width: 8vw;
 }
