@@ -10,6 +10,10 @@ body {
     transform: translateX(-50%);
 }*/
 
+.nav-custom {
+    font-size: 25pt;
+}
+
 .navbar ul {
     text-align:center;
     width: 100%;
