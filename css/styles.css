@@ -35,7 +35,7 @@ body {
 
 .navbar.scrolled {
     background: rgb(68, 68, 68) !important; /* IE */
-    background: rgba(68, 68, 68, 0.78) !important; /* NON-IE */
+    background: rgba(68, 68, 68, 0.99) !important; /* NON-IE */
 }
 /* End transition*/
 
@@ -47,9 +47,24 @@ body {
     padding: 200px;
 }
 
-.main {
-    margin-bottom: -100px;
+.main-body {
+    font-size: 18pt;
+    text-align: center;
+    font-weight: 600 !important;
+    color: #333333;
+    margin-bottom: 30px;
 }
+
+.main-heading {
+    font-size: 30pt;
+    text-align: center;
+    margin: 40px;
+}
+
+.hr {
+    margin: 40px;
+}
+
 
 .intro-text {
     font-size: 16.5px;
