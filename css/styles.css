@@ -1,15 +1,9 @@
-/*not an empty file*/
 body {
     font-size: 16pt;
     font-family: 'Roboto', 'Open Sans', 'Roboto Slab', 'Serif' !important;
 }
 
-/*.navbar-nav.navbar-center {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}*/
-
+/* Navbar Styles */ 
 .nav-custom {
     font-size: 25pt;
 }
@@ -23,7 +17,15 @@ body {
     float: none;
 }
 
-/* Add the below transitions to allow a smooth color change similar to lyft */
+@media screen and (min-width: 0px) and (max-width: 1024px) {
+    .navbar-collapse {
+        background-color: rgba(68, 68, 68, 0.99);
+        margin: -.5rem -1rem;
+        padding: .5rem 1rem;
+    }
+}
+
+/* Add the below transitions to allow a smooth color change*/
 .navbar {
     background-color: transparent !important;
     -webkit-transition: all 0.6s ease-out !important;
@@ -38,6 +40,7 @@ body {
     background: rgba(68, 68, 68, 0.99) !important; /* NON-IE */
 }
 /* End transition*/
+/* End of Navbar Styles */
 
 .main-image {
     background: url("../img/footballsunset2.jpg");
@@ -61,10 +64,19 @@ body {
     margin: 40px;
 }
 
+.main-heading-text {
+    font-size: 25pt;
+    font-weight: 700;
+}
+
+.main-heading-top {
+    font-size: 60pt !important;
+    color: seashell !important;
+}
+
 .hr {
     margin: 40px;
 }
-
 
 .intro-text {
     font-size: 16.5px;
@@ -88,6 +100,12 @@ body {
     padding: 30px;;
 }
 
+.test-container {
+    margin-top: 300px;
+    margin-bottom: 200px;;
+}
+
+/* CSS ID's */
 #card-img-bigfork {
     width: 8vw;
 }
@@ -106,9 +124,4 @@ body {
 
 #card-img-join {
     width: 10vw;
-}
-
-.test-container {
-    margin-top: 300px;
-    margin-bottom: 200px;;
 }
