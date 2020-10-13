@@ -59,17 +59,12 @@ body {
 /* End of Navbar Styles */
 
 .main-image {
-    background: url("../img/footballsunset2blue.jpg");
+    background: url("../img/footballsunset2darkblue.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     padding: 200px;
     text-align: center !important;
-}
-
-#transparent {
-    background-color: rgba(68, 68, 68, 0.9) !important;
-    z-index: 2;
 }
 
 .main-heading-text {
@@ -80,7 +75,7 @@ body {
 .main-heading-top {
     font-size: 60pt !important;
     color: seashell !important;
-    text-shadow: 2px 2px 5px #000000;
+    text-shadow: 2px 2px 2px #000000;
 }
 
 .hr {
@@ -118,10 +113,20 @@ body {
     padding: 30px;;
 }
 
+.footer-main-text {
+    color: silver;
+}
+
+.footer-links {
+    color: silver;
+    font-size: 20pt;
+}
+
 .test-container {
     margin-top: 300px;
     margin-bottom: 200px;;
 }
+
 
 /* Card ID's */
 #card-img-bigfork {
