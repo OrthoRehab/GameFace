@@ -4,10 +4,13 @@ body {
 }
 
 /* Navbar Styles */ 
+
+/* Navbar Font Styles */
 .nav-custom {
-    font-size: 25pt;
+    font-size: 18pt;
 }
 
+/* Navbar Nav Alignment */
 .navbar ul {
     text-align:center;
     width: 100%;
@@ -17,6 +20,7 @@ body {
     float: none;
 }
 
+/* Navbar Collapsed Menu Background Color */
 @media screen and (min-width: 0px) and (max-width: 1024px) {
     .navbar-collapse {
         background-color: rgba(68, 68, 68, 0.99);
@@ -25,7 +29,19 @@ body {
     }
 }
 
-/* Add the below transitions to allow a smooth color change*/
+/* Navbar Nav Dividers */
+.border-md-right {
+    border-right: 2px solid silver;
+}
+
+@media (max-width: 1024px) {
+    .border-md-right {
+        border-right: none;
+        border-bottom: 1px solid silver;
+    }
+}
+
+/* Navbar Transition */
 .navbar {
     background-color: transparent !important;
     -webkit-transition: all 0.6s ease-out !important;
@@ -48,6 +64,22 @@ body {
     background-position: center center;
     background-size: cover;
     padding: 200px;
+    text-align: center !important;
+}
+
+.main-heading-text {
+    font-size: 25pt;
+    font-weight: 400;
+}
+
+.main-heading-top {
+    font-size: 60pt !important;
+    color: seashell !important;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+.hr {
+    margin: 40px;
 }
 
 .main-body {
@@ -62,25 +94,6 @@ body {
     font-size: 30pt;
     text-align: center;
     margin: 40px;
-}
-
-.main-heading-text {
-    font-size: 25pt;
-    font-weight: 700;
-}
-
-.main-heading-top {
-    font-size: 60pt !important;
-    color: seashell !important;
-}
-
-.hr {
-    margin: 40px;
-}
-
-.intro-text {
-    font-size: 16.5px;
-    box-shadow: #424f95 2px;
 }
 
 .card-custom {
@@ -105,7 +118,7 @@ body {
     margin-bottom: 200px;;
 }
 
-/* CSS ID's */
+/* Card ID's */
 #card-img-bigfork {
     width: 8vw;
 }
