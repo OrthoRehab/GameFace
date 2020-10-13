@@ -59,12 +59,17 @@ body {
 /* End of Navbar Styles */
 
 .main-image {
-    background: url("../img/footballsunset2.jpg");
+    background: url("../img/footballsunset2blue.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     padding: 200px;
     text-align: center !important;
+}
+
+#transparent {
+    background-color: rgba(68, 68, 68, 0.9) !important;
+    z-index: 2;
 }
 
 .main-heading-text {
