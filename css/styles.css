@@ -1,6 +1,5 @@
 body {
-    font-size: 16pt;
-    font-family: 'Roboto', 'Open Sans', 'Roboto Slab', 'Serif' !important;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
 /* Navbar Styles */ 
@@ -75,7 +74,7 @@ body {
 .main-heading-top {
     font-size: 60pt !important;
     color: seashell !important;
-    text-shadow: 2px 2px 2px #000000;
+    text-shadow: 2px 2px 5px #000000;
 }
 
 .hr {
@@ -102,7 +101,7 @@ body {
 }
 
 .card-img-custom {
-    height: 6vw;
+    height: 7vw;
     align-self: center;
 }
 
