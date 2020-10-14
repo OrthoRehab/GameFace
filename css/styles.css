@@ -1,5 +1,10 @@
 body {
     font-family: Verdana, Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+  overflow-y: scroll;
+  height: 100%;
+  perspective: 1px;
+  transform-style: preserve-3d;
 }
 
 /* Navbar Styles */ 
@@ -57,14 +62,14 @@ body {
 /* End transition*/
 /* End of Navbar Styles */
 
-.main-image {
+/*.main-image {
     background: url("../img/footballsunset2darkblue.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     padding: 200px;
     text-align: center !important;
-}
+}*/
 
 .main-heading-text {
     font-size: 25pt;
@@ -75,6 +80,7 @@ body {
     font-size: 60pt !important;
     color: seashell !important;
     text-shadow: 2px 2px 5px #000000;
+    transform: translateZ(-1px) scale(2) translate(-25%, -25%);
 }
 
 .hr {
@@ -87,12 +93,72 @@ body {
     font-weight: 600 !important;
     color: #333333;
     margin-bottom: 30px;
+    padding: 0px;
 }
 
 .main-heading {
     font-size: 30pt;
     text-align: center;
     margin: 40px;
+}
+
+/* Sticky Scroller */
+header {
+    position: relative;
+    min-height: auto;
+    width: 100% auto;
+    z-index: 0;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    display: block;
+    background: url("../img/footballsunset2darkblue.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover !important;
+    padding: 200px;
+    text-align: center !important;
+    transform: translateZ(-1px) scale(2.1);
+    min-height: 100%;
+    z-index: -1;
+}
+
+section {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    transform-style: inherit;
+}
+
+.sticky-scroller-section {
+    background: #fafafa;
+    box-shadow: 0 0 20px #333;
+    z-index: 1;
+}
+
+.sticky-scroller-section p {
+    z-index: 3;
+    transform: translate(-50%, -50%);
+}
+
+*,
+*::before,
+*::after,
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import 'https://fonts.googleapis.com/css?family=Overlock:400,400i,700|Oleo+Script';
+
+html {
+  overflow: hidden;
+  height: 100%;
 }
 
 .card-custom {
